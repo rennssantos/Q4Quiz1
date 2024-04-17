@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  
+  <title>Q4 Quiz 1</title>
+
+  <style>
+    body{
+      background-image: linear-gradient(#2b0480, #9245ad);
+      height: 1000px;
+    }
+    #logo{
+    	height: 70px;
+    	width: 70px;
+    }
+    #navsection{
+    	font-family: Consolas;
+    	font-size: 25px;
+    }
+    #links{
+    	color: #cc66ff;
+    }
+    #search-container  {
+  	width: 20%;
+  }
+  #navsection {
+  	width: 80%;
+  }
+  #viewQ1, #viewQ2{
+  	margin-top: 200px;
+  	color: white;
+  	font-size: 40px;
+  	background-color: #972cb8;
+  	font-family: Consolas;
+  }
+  #profile-icon{
+  	height: 120px;
+  	width: 120px;
+  	margin-top: 150px;
+  }
+  span{
+  	font-family: Rockwell;
+  	font-size: 70px;
+  	background-color: #3f3c40;
+  	color: white;
+  }
+
+  </style>
+</head>
+<body>
+
+
+	<nav class="navbar navbar-expand-md fixed-top bg-dark">
+	<a class="navbar-brand" href="#"><img id="logo" src="brand.png"></a>
+
+	<div id="navsection">
+	  <!-- Links -->
+	        <ul class="navbar-nav">
+	            <li class="nav-item">
+	                <a id="links" class="nav-link" href="#" onclick="firstquarter()">First Quarter</a>
+	            </li>
+	            <li class="nav-item">
+	                <a id="links" class="nav-link" href="#" onclick="secondquarter()">Second Quarter</a>
+	            </li>
+	        </ul>
+	</div>
+	
+	<div id="search-container">
+		<form>
+	   		<input type="search" class="bg-light" name="search" id="searchbar" value="Enter a keyword">
+	    	<a href="#"><button type="search" class="bg-info">Search</button></a>
+		</form>
+	</div> 
+
+	</nav>
+
+
+<center>
+	<a href="page2.html"><p id="viewQ1"></p></a>
+	<a href="page3.html"><p id="viewQ2"></p></a>
+
+	<img id="profile-icon" src="https://www.pngall.com/wp-content/uploads/5/Profile.png"><br>
+	<span>MY ONLINE PORTFOLIO</span>
+
+</center> 
+
+  <script type="text/javascript">
+   function firstquarter(){
+   	document.getElementById('viewQ1').innerHTML="View Quarter 1 Project";
+   }
+   function secondquarter(){
+   	document.getElementById('viewQ2').innerHTML="View Quarter 2 Project";
+   }
+
+  </script>
+</body>
+</html>

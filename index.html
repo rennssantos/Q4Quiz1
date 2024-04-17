@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  
+ 	<title>Q4 Quiz 1</title>
+
+ 	<style>
+ 		body{
+ 			background-image: linear-gradient(#2b0480, #9245ad);
+ 			height: 1000px;
+ 		}
+  		#login-container{
+  			box-shadow: 4px 4px 4px 4px #cfc1d9;
+  			padding: 10px;
+  			margin-top: 200px;
+  			background-color: #efedf0;
+  			width: 500px;
+  		}
+  		label{
+  			font-family: Consolas;
+  		}
+  		#login{
+  			width: 100px;
+  		}
+  		#profile-icon{
+  			height: 120px;
+  			width: 120px;
+  			margin-top: 25px;
+  		}
+  		button{
+  			margin: 10px;
+  		}
+ 	</style>
+</head>
+<body>
+
+<center>
+	<div id="login-container">
+		<div class="col-md-10">
+			<!--profile icon here-->
+			<img id="profile-icon" src="https://www.pngall.com/wp-content/uploads/5/Profile.png"><br><br>
+
+		<form action="mainpage.html" class="form-group">
+			<label id="email-label"></label><br>
+			<input type="text" class="form-control bg-light" name="email" id="email">
+			<br>
+			<label id="pwd-label"></label><br>
+			<input type="text" class="form-control bg-default" name="email" id="email">
+			<br>
+			
+			<a href="mainpage.html"><button class="btn btn-success btn-lg">Login</button></a>
+    		<a href="#"><button type="reset" class="btn btn-light btn-lg">Cancel</button></a>
+		</form>
+		</div>
+	</div>
+</center>	
+
+
+	<script type="text/javascript">
+		document.getElementById("email-label").innerHTML = "Email:";
+		document.getElementById("pwd-label").innerHTML = "Password:";
+	</script>
+</body>
+</html>
